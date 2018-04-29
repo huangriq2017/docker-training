@@ -8,6 +8,7 @@ set -e
 
 if [[ -e /scripts/firstrun ]]; then
 	# config mariadb
+  chmod 777 /scripts/firstrun_maria
 	/scripts/firstrun_maria
     	rm /scripts/firstrun
 else

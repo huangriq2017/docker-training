@@ -4,11 +4,11 @@
 #
 # Dockerizing jdk: Dockerfile for building jdk images
 #
-FROM       csphere/centos:7.1
+FROM       csphere/centos
 MAINTAINER Carson,C.J.Zeong <zcy@nicescale.com>
 
-ENV JAVA_VERSION 1.7.0
-ENV JDK_HOME /usr/lib/jvm/java-1.7.0-openjdk
+ENV JAVA_VERSION 1.8.0
+ENV JDK_HOME /usr/lib/jvm/java-1.8.0-openjdk
 
 # Install jdk
 RUN yum -y install java-${JAVA_VERSION}-openjdk java-${JAVA_VERSION}-openjdk-devel && \

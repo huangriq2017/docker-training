@@ -4,10 +4,10 @@
 #
 # Dockerizing jre: Dockerfile for building jre images
 #
-FROM       csphere/centos:7.1
+FROM       csphere/centos
 MAINTAINER Carson,C.J.Zeong <zcy@nicescale.com>
 
-ENV JAVA_VERSION 1.7.0
+ENV JAVA_VERSION 1.8.0
 ENV JRE_HOME /usr/lib/jvm/jre
 
 # Install jre
